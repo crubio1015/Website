@@ -15,18 +15,31 @@
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="images/Exclusive Utility-Recovered-Recovered (1).png" width="600"; height="500"></a>
+            <img src="images/banner(2).png" class="logo">
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()" ></i>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="">Services</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Plumbing</a></li>
+                                <li><a href="#">Pest Control</a></li>
+                                <li><a href="#">Electricity</a></li>
+                                <li><a href="#">Fencing</a></li>
+                                <li><a href="#">Landscaping</a></li>
+                                <li><a href="#">Solar</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars"onclick="showMenu()"></i>
 
         </nav>
+        </section>
+<section>
         <div class="text-box">
             <h1>NEED EXPERT ASSITANCE WITH HOME REPAIRS OR RENOVATIONS?</h1>
             <p>
@@ -47,7 +60,9 @@
 
 
         </div>
-    </section>
+ </section>
+
+
 
     <section class="services">
 
@@ -64,8 +79,9 @@ most efficient, effective, and reliable solutions for all your home service need
     </section>
 
     <section class="plumbing">
-        <div class="row">
-            <div class="service-col">
+        <div class="service-col">
+            <img src="/images/plumber.png" >
+
                 <h3>Plumbing</h3>
                 <p>
                     We pride ourselves on delivering top-quality plumbing solutions to meet all your needs. Our
@@ -75,7 +91,9 @@ plumbing issues, including leaky pipes, clogged drains, faulty fixtures, and mor
 state-of-the art equipment and proven techniques to deliver lasting results.
                 </p>
             </div>
-            
+        </section>
+
+        <section class="pest-control">
             <div class="service-col">
                 <h3>Pest Control</h3>
                 <p>
@@ -86,10 +104,13 @@ them all. Using cutting edge techniques and environmentally friendly products, w
 treatments tailored to your specific pest control needs. Our approach focuses not only on eliminating
 pests but also on preventing future infestations, ensuring long-term protection for your property. Don’t
 let pests take over your property.
-                </p>
+                    </p>
             </div>
+        </section>
 
+        <section class="eletricity"></section>
             <div class="service-col">
+               
                 <h3>Electricity</h3>
                 <p>
                     Our team of highly skilled and certified electricians is equipped to handle a wide range of electrical
@@ -101,12 +122,9 @@ your existing space, we’ve got you covered. We work closely with you to unders
 offer customized solutions that maximize energy efficiency and functionality. Our goal is to provide
 electrical systems that not only meet your current needs but also support your future growth.
                 </p>
-            </div>
+            
         </div>
  </section>
-            
-            
-            
             
             <section class="fencing">
             <div class="row">
@@ -120,6 +138,8 @@ perfect fencing solution to meet your specific requirements.<br>
 Whether you need a new fence installation, fence repair, or fence maintenance, we’ve got you covered
                 </p>
             </div>
+        </section>
+        <section class="landscaping">
             <div class="service-col">
                 <h3>Landscaping</h3>
                 <p>
@@ -135,7 +155,9 @@ Whether you need a new fence installation, fence repair, or fence maintenance, w
                     attention to every detail, ensuring that the final result exceeds your expectations.
                 </p>
             </div>
-        
+        </section>
+
+        <section class="Solar">
             <div class="service-col">
                 <h3>Solar</h3>
                 <p>
@@ -160,6 +182,15 @@ Whether you need a new fence installation, fence repair, or fence maintenance, w
         function hideMenu(){
             navLinks.style.right="-200";
         }
+        function showMenu() {
+        var navLinks = document.getElementById("navLinks");
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        var navLinks = document.getElementById("navLinks");
+        navLinks.style.right = "-200px";
+    }
     </script>
 </body>
 </html>
