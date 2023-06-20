@@ -13,22 +13,22 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
 <body>
-    <section class="header">
+    <div class="header" id="#home">
         <nav>
-            <img src="images/banner(2).png" class="logo">
+            <a href="#home" id="navbar_logo"><img src="images/banner(2).png"width = 500></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()" ></i>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Services</a>
+                    <li><a href="#service">Services</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="#">Plumbing</a></li>
-                                <li><a href="#">Pest Control</a></li>
-                                <li><a href="#">Electricity</a></li>
-                                <li><a href="#">Fencing</a></li>
-                                <li><a href="#">Landscaping</a></li>
-                                <li><a href="#">Solar</a></li>
+                                <li><a href="#plumbing">Plumbing</a></li>
+                                <li><a href="#pest">Pest Control</a></li>
+                                <li><a href="#electric">Electricity</a></li>
+                                <li><a href="#fence">Fencing</a></li>
+                                <li><a href="#land">Landscaping</a></li>
+                                <li><a href="#solar">Solar</a></li>
                             </ul>
                         </div>
                     </li>
@@ -38,8 +38,8 @@
             <i class="fa fa-bars"onclick="showMenu()"></i>
 
         </nav>
-        </section>
-<section>
+    </div>
+<div>
         <div class="text-box">
             <h1>NEED EXPERT ASSITANCE WITH HOME REPAIRS OR RENOVATIONS?</h1>
             <p>
@@ -60,88 +60,205 @@
 
 
         </div>
- </section>
+</div>
 
 
+    <!--Service-->
 
-    <section class="services">
-
-        <h1>Services </h1>
-        <p>
-            Choosing our home service company is the epitome of a wise decision for clients seeking the highest
-standard of excellence. Our unwavering commitment to delivering exceptional service and exceeding
-client expectations sets us apart as the premier choice in the industry. When you choose our home
-service company, you gain access to a team of experienced experts who are at the forefront of their
-respective fields. We consistently invest in training, staying updated with the latest industry
-advancements, and utilizing cutting-edge techniques and technologies. This ensures that we deliver the
-most efficient, effective, and reliable solutions for all your home service needs.
-        </p>
-    </section>
-
-    <section class="plumbing">
-        <div class="service-col">
-            <img src="/images/plumber.png" >
-
-                <h3>Plumbing</h3>
-                <p>
-                    We pride ourselves on delivering top-quality plumbing solutions to meet all your needs. Our
-experienced team of licensed plumbers is dedicated to providing reliable and efficient services. Whether
-you require repairs, installations. Or maintenance, we’ve got you covered. We tackle a wide range of
-plumbing issues, including leaky pipes, clogged drains, faulty fixtures, and more. Our experts utilize
-state-of-the art equipment and proven techniques to deliver lasting results.
-                </p>
-            </div>
-        </section>
-
-        <section class="pest-control">
-            <div class="service-col">
-                <h3>Pest Control</h3>
-                <p>
-                    Our team of highly skilled and licensed pest control technicians is dedicated to safeguarding your
-property from unwanted pests. From common nuisances like ants, spiders, and rodents to more
-challenging infestations such as termites or bed bugs, we have the knowledge and experience to handle
-them all. Using cutting edge techniques and environmentally friendly products, we deliver targeted
-treatments tailored to your specific pest control needs. Our approach focuses not only on eliminating
-pests but also on preventing future infestations, ensuring long-term protection for your property. Don’t
-let pests take over your property.
+    <div class="service" id="service">
+        <div class= "service__container">
+            <div class="main__images"><img src="images/banner(2).png" width="650"></div>
+            <div class="main__content">
+                <h1> Services </h1>
+                <h2>Why Choose Us?</h2>
+                    <p>
+                        Choosing our home service company is the epitome of a wise decision for clients seeking the highest
+                        standard of excellence. Our unwavering commitment to delivering exceptional service and exceeding
+                        client expectations sets us apart as the premier choice in the industry. When you choose our home
+                        service company, you gain access to a team of experienced experts who are at the forefront of their
+                        respective fields. We consistently invest in training, staying updated with the latest industry
+                        advancements, and utilizing cutting-edge techniques and technologies. This ensures that we deliver the
+                        most efficient, effective, and reliable solutions for all your home service needs.
                     </p>
+                    
             </div>
-        </section>
+                
+            </div>
+    </div>
 
-        <section class="eletricity"></section>
-            <div class="service-col">
+    <!--Services Offers-->
+    <div class="plumbing" id="plumbing">
+        <div class="plumbing__container">
+            <div class="plumbing__images"><img src="images/AdobeStock_74870355.jpeg" width="500" height="325"></div>
+            <div class="plumbing__content">
+                <h1>Plumbing</h1>
+                <p>We pride ourselves on delivering top-quality plumbing solutions to meet all your needs. Our
+                    experienced team of licensed plumbers is dedicated to providing reliable and efficient services. Whether
+                    you require repairs, installations. Or maintenance, we’ve got you covered. We tackle a wide range of
+                    plumbing issues, including leaky pipes, clogged drains, faulty fixtures, and more. Our experts utilize
+                    state-of-the art equipment and proven techniques to deliver lasting results.</p>
+                    <a href=""class="hero-btn2">Receive Your Free Estimate!</a>
+            </div>
+        </div>
+
+
+    <div class="pest" id="pest">
+        <div class="pest__container">
+            <div class="pest__images"><img src="images/AdobeStock_106890088.jpeg" width="500" height="325"></div>
+            <div class="pest__content">
+                <h1>Pest Control</h1>
+                <p>Our team of highly skilled and licensed pest control technicians is dedicated to safeguarding your
+                    property from unwanted pests. From common nuisances like ants, spiders, and rodents to more
+                    challenging infestations such as termites or bed bugs, we have the knowledge and experience to handle
+                    them all. Using cutting edge techniques and environmentally friendly products, we deliver targeted
+                    treatments tailored to your specific pest control needs. Our approach focuses not only on eliminating
+                    pests but also on preventing future infestations, ensuring long-term protection for your property. Don’t
+                    let pests take over your property.</p>
+                    <a href=""class="hero-btn2">Receive Your Free Estimate!</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="electric" id="electric">
+        <div class="electricity__container">
+            <div class="electricity__images"><img src="images/electrician-g44a63df32_640.jpg" width="500" height="325"></div>
+            <div class="electricity__content">
+                <h1>Electricity</h1>
+                <p>Our team of highly skilled and certified electricians is equipped to handle a wide range of electrical
+                    projects. From installations and repairs to maintenance and upgrades, we have the knowledge and
+                    experience to deliver top-notch results. We stay up to date with the latest industry standards and best
+                    practices, guaranteeing efficient and compliant electrical work.<br>
+                    Whether you need electrical wiring for a new construction project or want to enhance the lighting in
+                    your existing space, we’ve got you covered. We work closely with you to understand your needs and
+                    offer customized solutions that maximize energy efficiency and functionality. Our goal is to provide
+                    electrical systems that not only meet your current needs but also support your future growth.</p>
+                    <a href=""class="hero-btn2">Receive Your Free Estimate!</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="electric" id="electric">
+        <div class="fencing__container">
+            <div class="fencing__images"><img src="images/daniel-janzen-SgNvZ0NowoY-unsplash.jpg" width="500" height="325"></div>
+            <div class="fencing__content">
+                <h1>Fencing</h1>
+                <p>Our team of experienced fencing professionals is dedicated to delivering outstanding craftsmanship and
+                    exceptional service. We offer a wide range of fencing options, including wood, vinyl, chain-link, and
+                    ornamental iron. Whether you’re looking for privacy, security, or a decorative touch, we have the
+                    perfect fencing solution to meet your specific requirements.<br>
+                    Whether you need a new fence installation, fence repair, or fence maintenance, we’ve got you covered</p>
+                    <a href=""class="hero-btn2">Receive Your Free Estimate!</a>
+            </div>
+        </div>
+        </div>  
+
+
+
+    <div class="land" id="land">
+        <div class="landscaping__container">
+            <div class="landscaping__images"><img src="images/AdobeStock_314831805.jpeg" width="500" height="325"></div>
+            <div class="landscaping__content">
+                <h1>Landscaping</h1>
+                <p>Our team of skilled landscapers is dedicated to delivering exceptional craftsmanship and outstanding
+                    customer service. We understand that your outdoor space is an extension of your home or business, and
+                    we take pride in transforming it into a stunning oasis. Quality is our top priority. We source the finest
+                    materials and plants to ensure that your landscaping project is built to last. Our team follows industry
+                    best practices and utilizes cutting-edge techniques to deliver sustainable and environmentally friendly
+                    solutions. We believe in the power of collaboration. We work closely with you to understand your
+                    vision, preferences, and budget. Our experienced designers will create a customized landscaping plan
+                    that incorporates your ideas and maximizes the potential of your outdoor space. We pay meticulous
+                    attention to every detail, ensuring that the final result exceeds your expectations.</p>
+                    <a href=""class="hero-btn2">Receive Your Free Estimate!</a>
+            </div>
+        </div>
+        </div>
+
+
+    <div class="solar" id="solar">
+        <div class="solar__container">
+            <div class="solar__images"><img src="images/AdobeStock_314831805.jpeg" width="500" height="325"></div>
+            <div class="solar__content">
+                <h1>Solar</h1>
+                <p>Our team of experienced solar professionals is dedicated to delivering top-quality installations and
+                    exceptional service. Whether you&#39;re looking to offset your electricity bill or achieve energy
+                    independence, we have the right solution for you. Going solar not only helps the environment but also
+                    provides significant long-term cost savings. By generating your own clean, renewable energy, you can
+                    reduce or eliminate your reliance on traditional grid power. Our solar energy systems are designed to
+                    deliver optimal energy efficiency, helping you save on your electricity bills and offering a solid return on
+                    investment. We partner with trusted manufacturers to ensure that your solar panels, inverters, and
+                    other system components are of the highest quality.</p>
+                    <a href=""class="hero-btn2">Receive Your Free Estimate!</a>
+            </div>
+        </div>
+        </div>
+     </div>
+
+        
+
+        <!--<div class="slides">
+
+
+                <h2>Plumbing</h2>
+                <p>
+                We pride ourselves on delivering top-quality plumbing solutions to meet all your needs. Our
+                experienced team of licensed plumbers is dedicated to providing reliable and efficient services. Whether
+                you require repairs, installations. Or maintenance, we’ve got you covered. We tackle a wide range of
+                plumbing issues, including leaky pipes, clogged drains, faulty fixtures, and more. Our experts utilize
+                state-of-the art equipment and proven techniques to deliver lasting results.
+                </p>
+                <img src="/images/plumber.png" >
+                <a href=""class="service-hero-btn">Receive Your Free Estimate!</a>
+            </div>
+
+
+            <div class="slides">
+                <h2>Pest Control</h2>
+                <p>
+                Our team of highly skilled and licensed pest control technicians is dedicated to safeguarding your
+                property from unwanted pests. From common nuisances like ants, spiders, and rodents to more
+                challenging infestations such as termites or bed bugs, we have the knowledge and experience to handle
+                them all. Using cutting edge techniques and environmentally friendly products, we deliver targeted
+                treatments tailored to your specific pest control needs. Our approach focuses not only on eliminating
+                pests but also on preventing future infestations, ensuring long-term protection for your property. Don’t
+                let pests take over your property.
+                        </p>
+            </div>
+
+            <div class="slides">
                
-                <h3>Electricity</h3>
+                <h2>Electricity</h2>
                 <p>
                     Our team of highly skilled and certified electricians is equipped to handle a wide range of electrical
-projects. From installations and repairs to maintenance and upgrades, we have the knowledge and
-experience to deliver top-notch results. We stay up to date with the latest industry standards and best
-practices, guaranteeing efficient and compliant electrical work.<br>
-Whether you need electrical wiring for a new construction project or want to enhance the lighting in
-your existing space, we’ve got you covered. We work closely with you to understand your needs and
-offer customized solutions that maximize energy efficiency and functionality. Our goal is to provide
-electrical systems that not only meet your current needs but also support your future growth.
+                    projects. From installations and repairs to maintenance and upgrades, we have the knowledge and
+                    experience to deliver top-notch results. We stay up to date with the latest industry standards and best
+                    practices, guaranteeing efficient and compliant electrical work.<br>
+                    Whether you need electrical wiring for a new construction project or want to enhance the lighting in
+                    your existing space, we’ve got you covered. We work closely with you to understand your needs and
+                    offer customized solutions that maximize energy efficiency and functionality. Our goal is to provide
+                    electrical systems that not only meet your current needs but also support your future growth.
                 </p>
             
         </div>
- </section>
             
-            <section class="fencing">
-            <div class="row">
-            <div class="service-col">
-                <h3>Fencing</h3>
+            <div class="slides">
+
+                <h2>Fencing</h2>
                 <p>
                     Our team of experienced fencing professionals is dedicated to delivering outstanding craftsmanship and
-exceptional service. We offer a wide range of fencing options, including wood, vinyl, chain-link, and
-ornamental iron. Whether you’re looking for privacy, security, or a decorative touch, we have the
-perfect fencing solution to meet your specific requirements.<br>
-Whether you need a new fence installation, fence repair, or fence maintenance, we’ve got you covered
-                </p>
+                    exceptional service. We offer a wide range of fencing options, including wood, vinyl, chain-link, and
+                    ornamental iron. Whether you’re looking for privacy, security, or a decorative touch, we have the
+                    perfect fencing solution to meet your specific requirements.<br>
+                    Whether you need a new fence installation, fence repair, or fence maintenance, we’ve got you covered
+                                    </p>
             </div>
-        </section>
-        <section class="landscaping">
-            <div class="service-col">
-                <h3>Landscaping</h3>
+
+            <div class="slides">
+                <h2>Landscaping</h2>
                 <p>
                     Our team of skilled landscapers is dedicated to delivering exceptional craftsmanship and outstanding
                     customer service. We understand that your outdoor space is an extension of your home or business, and
@@ -155,11 +272,9 @@ Whether you need a new fence installation, fence repair, or fence maintenance, w
                     attention to every detail, ensuring that the final result exceeds your expectations.
                 </p>
             </div>
-        </section>
 
-        <section class="Solar">
-            <div class="service-col">
-                <h3>Solar</h3>
+            <div class="slides">
+                <h2>Solar</h2>
                 <p>
                     Our team of experienced solar professionals is dedicated to delivering top-quality installations and
                     exceptional service. Whether you&#39;re looking to offset your electricity bill or achieve energy
@@ -171,10 +286,9 @@ Whether you need a new fence installation, fence repair, or fence maintenance, w
                     other system components are of the highest quality.
                 </p>
             </div>
-        </div>
+    </div>-->
         
-    </section>
-    <script>
+        <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu(){
             navLinks.style.right="0";
